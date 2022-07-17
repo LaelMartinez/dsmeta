@@ -23,7 +23,7 @@ public class SaleService {
 		LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
 	
 		//expressão condicional ternária
-		LocalDate min = maxDate.equals("") ? today.minusDays(365) : LocalDate.parse(maxDate);
+		LocalDate min = maxDate.equals("") ? today.minusDays(365) : LocalDate.parse(minDate);
 		LocalDate max = maxDate.equals("") ? today : LocalDate.parse(maxDate);
 				
 		
